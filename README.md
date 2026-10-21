@@ -1,5 +1,5 @@
 # AI 廢人網站初稿
-繁體中文、響應式、無外部套件與第三方追蹤的靜態網站。使用原創 CSS/SVG 示意素材。
+繁體中文、響應式、靜態品牌網站，不含第三方追蹤；會員啟用後載入固定版本的 Supabase SDK。使用原創 CSS/SVG 示意素材。
 
 啟動：`python3 -m http.server 8090 --bind 127.0.0.1 --directory /workspace/codex-workspace/website`
 
@@ -7,7 +7,7 @@
 
 目前可用：三個服務入口、作品方向篩選、手機導覽、課綱彈窗、需求摘要生成、文字檔下載與帶入 Email 草稿（訪客需自行寄送）。
 
-已補會員前端與資料表設定草案；Supabase 專案尚未建立，登入尚未啟用。尚未串接金流、付費影片權限、私人 LINE 交付及自動表單收件。摘要僅在瀏覽器記憶體產生，不會上傳或儲存。無登入或付款按鈕假裝可用。
+已補會員前端與資料表設定草案；Supabase 專案 ai-feiren-members 已建立，資料表權限已驗證；登入尚待網址與寄信設定完成後啟用。尚未串接金流、付費影片權限、私人 LINE 交付及自動表單收件。摘要僅在瀏覽器記憶體產生，不會上傳或儲存。無登入或付款按鈕假裝可用。
 
 上線前必須補齊：
 - 正式品牌名稱、Logo、個人介紹與聯絡方式。
@@ -24,3 +24,5 @@
 新增公開社群：Instagram short_videos8888、TikTok teemofungi0308；僅使用帳號頁，不假設支援私訊。Threads short_videos8888 已補入。
 
 會員啟用與實際驗收見 MEMBERSHIP_SETUP.md。會員文章不可放進公開 GitHub；身份與資格由後端驗證。Supabase SDK 固定 2.76.1，由 esm.sh 載入；未配置時不載入也不寄信。
+
+會員後端：bgmeotvditfurcyemfku。月費 NT$500 已由本人確認，尚未接通金流／自動扣款。authEnabled 在完成 Auth URL 與寄信實測前保持 false。

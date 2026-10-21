@@ -33,7 +33,7 @@
   const readyConfig = () => {
     try {
       const url = new URL(config.supabaseUrl);
-      return url.protocol === 'https:' && /^[a-z0-9-]+\.supabase\.co$/.test(url.hostname)
+      return config.authEnabled === true && url.protocol === 'https:' && /^[a-z0-9-]+\.supabase\.co$/.test(url.hostname)
         && !url.username && !url.password && url.pathname === '/'
         && typeof config.publishableKey === 'string' && config.publishableKey.startsWith('sb_publishable_');
     } catch { return false; }
