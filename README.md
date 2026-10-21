@@ -20,3 +20,5 @@
 品牌為 AI 廢人；所有課程為規劃，所有案例視覺為示意，不代表已完成商業交付。
 
 公開聯絡：Facebook 分享連結（未驗證為直達私訊）及 mummy110044@gmail.com。IG/Threads 待提供。私人 LINE 不寫入公開程式碼。
+
+新增公開社群：Instagram short_videos8888、TikTok teemofungi0308；僅使用帳號頁，不假設支援私訊。Threads 待提供。
