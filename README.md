@@ -28,6 +28,6 @@
 會員後端：bgmeotvditfurcyemfku。月費 NT$500 已由本人確認，尚未接通金流／自動扣款。authEnabled 在完成 Auth URL 與寄信實測前保持 false。
 
 ## Codex 基礎使用課程
-確認售價NT$2,999，影片尚未完成，保持未開賣。member.html / member.js提供課程購買流程與會員介面；GitHub Pages沒有後端，這裡明確停用註冊及付款。現有Supabase會員區、Threads與NT$500/月訂閱規劃保留。課程與訂閱權限分開。
+確認售價NT$2,000，影片尚未完成，保持未開賣。member.html / member.js提供課程購買流程與會員介面；GitHub Pages沒有後端，這裡明確停用註冊及付款。現有Supabase會員區、Threads與NT$500/月訂閱規劃保留。課程與訂閱權限分開。
 
 本機後端原始碼位於私人工作區course-platform/，沒有發布到此靜態網站；真實身分/付款/影片服務須另外部署。正式課程會使用同一Supabase會員身分，尚未完成SMTP、正式主機、觀看期限、交易條款與藍新測試交易；不代表現已能收款或觀看。
