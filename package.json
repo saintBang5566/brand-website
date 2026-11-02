@@ -1,0 +1,13 @@
+{
+  "name": "ai-makemoney-brand-website",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vercel dev",
+    "deploy": "vercel",
+    "deploy:production": "vercel --prod"
+  },
+  "devDependencies": {
+    "vercel": "latest"
+  }
+}
