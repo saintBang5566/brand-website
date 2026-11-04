@@ -36,4 +36,5 @@ h1,h2,h3{text-wrap:balance}main,section,article{min-width:0}p{overflow-wrap:anyw
 .ai-hero{display:block;padding-top:62px}.ai-hero .hero-heading h1{max-width:none}.ai-hero .hero-support{display:block;padding:0;margin-top:28px}.ai-hero .hero-support .intro{max-width:760px;margin-bottom:22px}.ai-hero .hero-support .actions{flex-direction:row;align-items:center;margin-top:0}.ai-hero .hero-photo{height:680px;margin-top:44px}.ai-hero .hero-photo img{object-position:center}
 @media(max-width:950px){.ai-hero{display:block;padding-top:42px}.ai-hero .hero-support{margin-top:22px}.ai-hero .hero-photo{height:min(68vw,560px);margin-top:34px}}
 @media(max-width:620px){.ai-hero .hero-support .actions{align-items:flex-start;flex-direction:column}.ai-hero .hero-photo{height:360px;margin-top:28px}}
+.ai-hero .hero-heading h1{font-size:clamp(18px,4.7vw,64px);line-height:1.18;letter-spacing:-2px;white-space:nowrap}
 @media(max-width:950px){.solution-categories{grid-template-columns:1fr}.solution-categories article:nth-child(3){border-left:0}.solution-categories article:nth-child(n+2){border-top:1px solid var(--line)}}
