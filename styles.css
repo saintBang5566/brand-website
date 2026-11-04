@@ -37,4 +37,5 @@ h1,h2,h3{text-wrap:balance}main,section,article{min-width:0}p{overflow-wrap:anyw
 @media(max-width:950px){.ai-hero{display:block;padding-top:42px}.ai-hero .hero-support{margin-top:22px}.ai-hero .hero-photo{height:min(68vw,560px);margin-top:34px}}
 @media(max-width:620px){.ai-hero .hero-support .actions{align-items:flex-start;flex-direction:column}.ai-hero .hero-photo{height:360px;margin-top:28px}}
 .ai-hero .hero-heading h1{font-size:clamp(18px,4.7vw,64px);line-height:1.18;letter-spacing:-2px;white-space:nowrap}
+.ai-hero{padding-bottom:34px}.ai-hero .hero-photo{width:min(100%,1050px);height:380px;margin:26px auto 0}@media(max-width:950px){.ai-hero .hero-photo{width:min(100%,820px);height:min(48vw,350px);margin-top:22px}}@media(max-width:620px){.ai-hero{padding-bottom:28px}.ai-hero .hero-photo{width:100%;height:230px;margin-top:18px}}
 @media(max-width:950px){.solution-categories{grid-template-columns:1fr}.solution-categories article:nth-child(3){border-left:0}.solution-categories article:nth-child(n+2){border-top:1px solid var(--line)}}
