@@ -4,7 +4,10 @@ create table if not exists public.orders (id uuid primary key default gen_random
 create table if not exists public.course_entitlements (user_id uuid not null references auth.users(id) on delete cascade, course_id text not null references public.courses(id) on delete cascade, order_id uuid not null references public.orders(id) on delete restrict, status text not null default 'active' check (status in ('active','revoked')), starts_at timestamptz not null, expires_at timestamptz not null, primary key (user_id, course_id), check (expires_at > starts_at));
 create table if not exists public.course_lessons (id uuid primary key default gen_random_uuid(), course_id text not null references public.courses(id) on delete cascade, title text not null, video_path text, sort_order integer not null default 0, active boolean not null default false, created_at timestamptz not null default now());
 create index if not exists orders_user_created_idx on public.orders(user_id, created_at desc);
+create index if not exists orders_course_idx on public.orders(course_id);
 create index if not exists entitlements_expiry_idx on public.course_entitlements(user_id, course_id, expires_at);
+create index if not exists entitlements_course_idx on public.course_entitlements(course_id);
+create index if not exists entitlements_order_idx on public.course_entitlements(order_id);
 create index if not exists lessons_course_sort_idx on public.course_lessons(course_id, sort_order);
 alter table public.courses enable row level security;
 alter table public.orders enable row level security;
