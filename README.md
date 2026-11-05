@@ -7,7 +7,7 @@
 
 目前可用：三個服務入口、作品方向篩選、手機導覽、課綱彈窗、需求摘要生成、文字檔下載與帶入 Email 草稿（訪客需自行寄送）。
 
-已補會員前端與資料表設定草案；Supabase 專案 ai-feiren-members 已建立，資料表權限已驗證；登入尚待網址與寄信設定完成後啟用。尚未串接金流、付費影片權限、私人 LINE 交付及自動表單收件。摘要僅在瀏覽器記憶體產生，不會上傳或儲存。無登入或付款按鈕假裝可用。
+會員前端已接 Supabase Email 登入；Vercel API 已包含藍新付款建立訂單、回呼驗章、365 天課程權限與私有影片短效網址。正式密鑰與 `COURSE_SALES_ENABLED=true` 尚未設定時，付款按鈕會保持停用。
 
 上線前必須補齊：
 - 正式品牌名稱、Logo、個人介紹與聯絡方式。
@@ -25,10 +25,10 @@
 
 會員啟用與實際驗收見 MEMBERSHIP_SETUP.md。會員文章不可放進公開 GitHub；身份與資格由後端驗證。Supabase SDK 固定 2.76.1，由 esm.sh 載入；未配置時不載入也不寄信。
 
-會員後端：bgmeotvditfurcyemfku。月費 NT$500 已由本人確認，尚未接通金流／自動扣款。authEnabled 在完成 Auth URL 與寄信實測前保持 false。
+會員後端：bgmeotvditfurcyemfku。會員登入已啟用；月費 NT$500 訂閱規劃與本次單次購課分開。
 ## Codex 基礎使用課程
-確認售價NT$2,000，影片尚未完成，保持未開賣。member.html / member.js提供課程購買流程與會員介面；GitHub Pages沒有後端，這裡明確停用註冊及付款。現有Supabase會員區、Threads與NT$500/月訂閱規劃保留。課程與訂閱權限分開。
+確認售價 NT$2,000，單次付款後可在會員網頁觀看 365 天。影片尚未完成，`COURSE_SALES_ENABLED` 保持 false；課程與訂閱權限分開。
 
-本機後端原始碼位於私人工作區course-platform/，沒有發布到此靜態網站；真實身分/付款/影片服務須另外部署。正式課程會使用同一Supabase會員身分，尚未完成SMTP、正式主機、觀看期限、交易條款與藍新測試交易；不代表現已能收款或觀看。
+正式開賣前需在 Vercel 設定 `.env.example` 所列變數、完成藍新測試交易，並將課程影片上傳至私有 `course-videos` bucket，再新增 `course_lessons` 記錄。金流密鑰及 service role key 只能放在 Vercel 伺服器環境變數。
 
 正式商店網址規劃為 https://aimakemoney.com.tw/，使用 Vercel 部署；已加入惜光商行資訊、課程價格、交付方式、服務條款、退款政策及隱私權政策。

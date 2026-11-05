@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "vercel dev",
     "deploy": "vercel",
-    "deploy:production": "vercel --prod"
+    "deploy:production": "vercel --prod",
+    "test": "node --test"
   },
   "devDependencies": {
     "vercel": "latest"
